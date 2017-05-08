@@ -9,6 +9,9 @@ function whoAmI(name , age) {
   if(!name || !age){
     console.log("Arguments not valid");
   }
+  else if(typeof age !== 'number' || typeof name !== 'string'){
+    console.log("Age and name are messed up")
+  }
   else {
       try {
         const yob = yearOfBirth(age);
@@ -21,4 +24,4 @@ function whoAmI(name , age) {
   }
 }
 
-whoAmI();
+whoAmI('William', "23");

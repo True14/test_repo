@@ -80,3 +80,25 @@ switch(month){
 	break;
 
 }
+
+
+//Rock Paper Scissors
+function RockPaperScissors(userChoice){
+    var computer = 1 + Math.floor((Math.random()*3));
+		console.log(computer);
+		const result = computer - userChoice;
+		if(result === 0){
+			console.log("Tie");
+		}
+		else if (result === -1 || result === 2){
+			console.log('You win!');
+		}
+		else {
+			console.log("Computer wins!");
+		}
+
+
+
+}
+
+RockPaperScissors(1);

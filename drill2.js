@@ -16,7 +16,7 @@ if (!isFinite(num)){
 		console.log('to negative infinity...');
 	}
 	else if (num === 0){
-		console.log('Staying home.');	
+		console.log('Staying home.');
 	}
 }
 
@@ -51,4 +51,32 @@ function decode(code){
 	else {
 		return ' ';
 	}
+}
+
+
+
+
+
+//How many days in a month
+const month = "November";
+
+switch(month){
+	case "January":
+	case "March":
+	case "May":
+	case "July":
+	case "August":
+	case "October":
+	case "December":
+		console.log(`${month} has 31 days.`);
+		break;
+
+	case "February":
+		console.log(`${month} has 28 days.`);
+		break;
+
+	default:
+	console.log(`${month} has 30 days.`);
+	break;
+
 }
